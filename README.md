@@ -23,7 +23,15 @@ npm install -g @nest/cli
 docker-compose up -d
 ```
 
-5. Reconstruir la base de datos
+5. Clonar el archivo `.env.example` con nombre `.env` y llenar con sus variables de entorno
+
+6. levantar el proyecto en ambiente de desarrollo
+
+```
+yarn start:dev
+```
+
+7. Reconstruir la base de datos
 
 ```
 http://localhost:3000/api/v2/seed
