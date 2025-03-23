@@ -27,7 +27,9 @@ import { ENV, EnvProvider } from './common/config/env.provider';
     //   }),
     //   inject: [ENV],
     // }),
-    MongooseModule.forRoot(process.env.MONGODB ?? ''),
+    MongooseModule.forRoot(process.env.MONGODB ?? '', {
+      dbName: process.env.MONGODB_NAME,
+    }),
     PokemonModule,
     SeedModule,
     CommonModule,
